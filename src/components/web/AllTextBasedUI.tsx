@@ -70,6 +70,6 @@ export function BlurInDemo() {
   );
 }
 
-export function BrandText() {
-  return <SparklesText text="MiNOx UI" />;
+export function BrandText({ className }: { className?: string }) {
+  return <SparklesText text="MiNOX UI" className={cn(className)} />;
 }

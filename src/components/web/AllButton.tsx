@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { CheckIcon, ChevronRightIcon } from "lucide-react";
 import { AnimatedSubscribeButton } from "../ui/animated-subscribe-button";
 import InteractiveHoverButton from "../ui/interactive-hover-button";
@@ -6,8 +7,18 @@ import RippleButton from "../ui/ripple-button";
 import ShimmerButton from "../ui/shimmer-button";
 import ShinyButton from "../ui/shiny-button";
 
-export function RainBtn() {
-  return <RainbowButton>Get Unlimited Access</RainbowButton>;
+export function RainBtn({
+  text,
+  className,
+}: {
+  text?: string;
+  className?: string;
+}) {
+  return (
+    <RainbowButton className={cn(className, "w-full")}>
+      {text || "Rainbow Button"}
+    </RainbowButton>
+  );
 }
 export function ShimmerBtn() {
   return (

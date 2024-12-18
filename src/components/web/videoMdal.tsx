@@ -2,7 +2,7 @@ import HeroVideoDialog from "../ui/hero-video-dialog";
 
 const VideoModal = () => {
   return (
-    <div>
+    <div className="max-w-6xl mx-auto h-full max-h-[500px]">
       <div className="relative">
         <HeroVideoDialog
           className="dark:hidden block"
