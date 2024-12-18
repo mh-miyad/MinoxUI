@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { motion } from "framer-motion";
@@ -39,7 +40,7 @@ export default function LetterPullup({
           custom={i}
           className={cn(
             "font-display text-center text-4xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-4xl md:leading-[5rem]",
-            className,
+            className
           )}
         >
           {letter === " " ? <span>&nbsp;</span> : letter}
