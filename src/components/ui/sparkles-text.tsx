@@ -1,7 +1,8 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
-import { CSSProperties, ReactElement, useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { CSSProperties, ReactElement, useEffect, useState } from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -94,7 +95,7 @@ const SparklesText: React.FC<SparklesTextProps> = ({
           } else {
             return { ...star, lifespan: star.lifespan - 0.1 };
           }
-        }),
+        })
       );
     };
 
