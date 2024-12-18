@@ -5,6 +5,7 @@ import BlurIn from "../ui/blur-in";
 import HyperText from "../ui/hyper-text";
 import LetterPullup from "../ui/letter-pullup";
 import { VelocityScroll } from "../ui/scroll-based-velocity";
+import SparklesText from "../ui/sparkles-text";
 import WordRotate from "../ui/word-rotate";
 
 export function TextPUllUp({ text }: { text: string }) {
@@ -67,4 +68,8 @@ export function BlurInDemo() {
       className="text-4xl font-bold text-black dark:text-white"
     />
   );
+}
+
+export function BrandText() {
+  return <SparklesText text="MiNOx UI" />;
 }
